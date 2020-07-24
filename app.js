@@ -1,9 +1,9 @@
 const readline = require("readline");
 const sqlite3 = require('sqlite3').verbose();
 const Table = require('cli-table')
-
-const db = new sqlite3.Database(dbFile);
 const dbFile = "./university.db"
+const db = new sqlite3.Database(dbFile);
+
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
